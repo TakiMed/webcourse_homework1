@@ -1,0 +1,64 @@
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width:device-width;initial-scale:1.0;">
+</head>
+<body>
+    <form title="Job Application" action="" method="get">
+
+        <div style="padding-bottom: 18px;font-size : 24px;">Job Application With Resume Upload</div>
+
+        <div style="padding-bottom: 18px;font-size : 20px;">Contact Information</div>
+
+        <div style="display: flex; padding-bottom: 18px;">
+            <div style=" margin-left : 0; margin-right : 1%; width : 49%;">First name:<span style="color: red;"> *</span><br/>
+                <input type="text" name="first_name" style="width: 100%;"/>
+            </div>
+            <div style=" margin-left : 1%; margin-right : 0; width : 49%;">Last name:<span style="color: red;"> *</span><br/>
+                <input type="text" name="last_name" style="width: 100%;"/>
+            </div>
+        </div>
+        <div style="padding-bottom: 18px;">Email:<span style="color:red;"> *</span><br/>
+            <input type="email" name="email" style="width: 100%;">
+        </div>
+        <div style="padding-bottom: 18px;">Phone:<span style="color:red;"> *</span><br/>
+            <input type="tel" name="phone" style="width: 100%;">
+        </div>
+
+        <div style="padding-bottom: 18px;font-size : 20px;">Position</div>
+
+        <div style="padding-bottom: 18px;">Position you are applaying for:<span style="color:red;"> *</span><br/>
+            <select style="position: absolute; width: 100%;">
+                <option value="Python">Backend Python</option>
+                <option value="NodeJS">Backend NodeJS</option>
+                <option value="React">Frontend React</option>
+                <option value="Angular">Frontend Angular</option>
+            </select>
+        </div><br/>
+        <div style="padding-bottom: 18px;">Resume Upload:<br/>
+            <input type="file" name="resume" style="width: 100%;">
+        </div>
+        <div style="padding-bottom: 18px;">Portfolio Website:<br/>
+            <input type="text" name="web" style="width: 100%;">
+        </div>
+        <div style="padding-bottom: 18px;">Salary Requirements:<br/>
+            <input type="text" name="salary_req" style="width: 100%;">
+        </div>
+        <div style="padding-bottom: 18px;">When can you start?<br/>
+            <input type="date" name="starting_date" style="width: 100%;">
+        </div>
+        <div style="padding-bottom: 18px;">Are you writing to relocate?<br/>
+            <span><input type="radio" name="relocate" value="Yes"/> Yes</span><br/>
+            <span><input type="radio" name="relocate" value="No"/> No</span><br/>
+            <span><input type="radio" name="relocate" value="Not sure"/> Not sure.</span><br/>
+        </div>
+        <div style="padding-bottom: 18px;">Last company you worked for:<br/>
+            <input type="text" name="last_company" style="width: 100%;">
+        </div>
+        <div style="padding-bottom: 18px;">Comments<br/>
+            <textarea name="Comments" style="width: 100%;" rows="4"></textarea>
+        </div><br/>
+        <input type="submit" value="Submit">
+    </form>
+</body>
